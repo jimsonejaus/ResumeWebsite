@@ -12,7 +12,6 @@ body {
     margin: 0;
     overflow-x: hidden;
     min-width:280px;
-    min-height: 280px;
 }
 
 h1 {
@@ -72,7 +71,6 @@ nav a:first-of-type {
     margin: 0;
     padding: 0;
 }
-
 
 .name label.hi {
     font-size: 2.5vw;
@@ -232,7 +230,6 @@ nav a:first-of-type {
     z-index: 1;
 }
 
-
 .left-h {
     grid-column: 3 / 5;
     grid-row: 5 / 6; 
@@ -243,13 +240,10 @@ nav a:first-of-type {
     grid-row: 2 / 6;
 }
 
-
 .right-h {
     grid-column: 7 / 9;
     grid-row: 4 / 5;
 }
-
-
 
 /* ------------- REACH ME SECTION ------------- */
 
@@ -260,19 +254,20 @@ nav a:first-of-type {
     flex-direction: column;
 }
 
+#reach-me h1 {
+    flex: 1 1 auto;
+    color: white;
+    font-size: 5vw;
+    padding-top: 5%;
+    align-self: center;
+}
+
 #reach-me .links {
     display: flex;
+    flex: 1 1 auto;
     padding: 5% 15% 0 15%;
     flex-flow: row wrap;
     justify-content: center;
-}
-
-#reach-me h1 {
-    display: block;
-    color: white;
-    font-size: 5vw;
-    margin-top: 10%;
-    align-self: center;
 }
 
 #reach-me a {
@@ -285,12 +280,12 @@ nav a:first-of-type {
 }
 
 #reach-me p {
+    flex: 1 1 auto;
     align-self: center;
     color: white;
     padding: 12% 10% 0;
     text-align: center;
 }
-
 
 /* ------------- MEDIA QUERIES ------------- */
 
@@ -342,6 +337,7 @@ nav a:first-of-type {
 
     #reach-me h1 {
         font-size: 6.5vw;
+        padding-top: 13%;
     }
 
     #reach-me img{
@@ -389,7 +385,15 @@ nav a:first-of-type {
 
     #reach-me h1 {
         font-size: 8vw;
-        margin-top: 18%;
+        padding-top: 18%;
+    }
+
+    #reach-me .links {
+        padding-top: 0;
+    }
+
+    #reach-me img{
+        height: 75px;
     }
 }
 
