@@ -1,0 +1,514 @@
+@font-face {
+    font-family: 'Pangea Afrikan';
+    src: local('Pangea Afrikan'), url('typefaces/PangeaAfrikanRegular.woff2') format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Pangea Afrikan';
+    src: local('Pangea Afrikan'), url('typefaces/PangeaAfrikanMedium.woff2') format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Pangea Afrikan';
+    src: local('Pangea Afrikan'), url('typefaces/PangeaAfrikanSemiBold.woff2') format("woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Pangea Afrikan';
+    src: local('Pangea Afrikan'), url('typefaces/PangeaAfrikanBold.woff2') format("woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Soka';
+    src: local('Soka'), url('typefaces/SokaHeavy.woff2') format("woff2");
+    font-weight: 700;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ECE4DB;
+    margin: 0;
+    padding: 0;
+    color: #292929;
+}
+
+p {
+    font-family: 'Pangea Afrikan', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border: none!important;
+}
+
+a {
+    text-decoration: none;
+    color: #292929;
+}
+
+a:visited {
+    color: #292929;
+}
+
+label {
+    font-family: 'Pangea Afrikan', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+input[type="submit"], button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.heading {
+    font-family: 'Soka', sans-serif;
+    font-size: 72px;
+}
+
+.subheading {
+    font-family: 'Pangea Afrikan', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.subheading2 {
+    font-family: 'Pangea Afrikan', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+nav {
+    display: flex;
+    border-bottom: 2px solid #292929;
+    padding: 0 40px;
+    align-items: center;
+    height: 10vh;
+}
+
+nav > * {
+    font-family: 'Pangea Afrikan', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #292929;
+    text-decoration: none;
+    margin-right: 64px;
+}
+
+nav:last-child {
+    margin-right: 0;
+}
+
+nav a:hover {
+    color: #FF6600;
+    transition: 0.5s ease;
+}
+
+#landing {
+    margin: 0 40px;
+    display: flex;
+    height: clamp(70vh, 83vh, 90vh);
+}
+
+#landing-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+#landing-text h1 {
+    font-family: 'Soka', sans-serif;
+    font-size: 36px;
+    margin: 15vh 0 -12px;
+}
+
+#landing-text p {
+    font-size: 16px;
+}
+
+#name {
+    display: block;
+    font-size: 5vw;
+}
+
+#role {
+    font-family: 'Pangea Afrikan', sans-serif;
+    font-weight: 500;
+    margin-top: 32px;
+}
+
+#landing-text p {
+    font-family: 'Pangea Afrikan', sans-serif;
+    font-weight: 400;
+}
+
+.CTA-button, input[type="submit"] {
+    padding: 16px 48px;
+    display: flex;
+    width: 108px;
+    justify-content: center;
+    border-radius: 50px;
+    color: #292929;
+    text-decoration: none;
+    font-family: 'Pangea Afrikan', sans-serif;
+    font-weight: 500;
+    border: 2px solid #292929;
+    transition: 0.5s ease;
+}
+
+.CTA-button:hover, input[type="submit"]:hover {
+    color: #ECE4DB;
+    background-color: #292929;
+    transition: 0.5s ease;
+}
+
+#landing-text a {
+    margin-top: 24px;
+    width: min-content;
+}
+
+#photo {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 1;
+    margin: 48px 0;
+}
+
+#photo img {
+    border-radius: 20em;
+    border: 2px solid #292929;
+    transition: 0.5s ease;
+}
+
+#contacts {
+    border-top: 2px solid #292929;
+    display: flex;
+    height: 6vh;
+}
+
+#contacts a {
+    font-family: 'Pangea Afrikan', sans-serif;
+    font-weight: 500;
+}
+
+#contacts > * {
+    display: flex;
+    border-right: 2px solid #292929;
+    width: 33.3333%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacts :last-child {
+    border-right: none;
+}
+
+#who-i-am-skills {
+    display: flex;
+    border-top: 2px solid #292929;
+    border-bottom: 2px solid #292929;;
+}
+
+#who-i-am-skills h2 {
+    margin-bottom: 20px;
+}
+
+#who-i-am {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    padding: 0 40px 40px;
+    border-right: 2px solid #292929;
+}
+
+#who-i-am p {
+    font-family: 'Pangea Afrikan', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    padding: 0 40px 40px;
+}
+
+.skill-group {
+    margin-bottom: 24px;
+}
+
+.my-works {
+    display: flex;
+    flex-direction: column;
+}
+
+#my-works .heading {
+    margin: 0;
+    padding: 56px 40px;
+}
+
+#works-group {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 2px solid #292929;
+
+}
+
+#works-group > * {
+    width: calc(50% - 84px);
+    padding: 40px;
+    border-top: 2px solid #292929;
+    transition: 0.5s ease;
+}
+
+#works-group :nth-child(even){
+    border-left: 2px solid #292929;
+}
+
+#works-group > *:hover  {
+    color: #FF6600;
+    transition: 0.5s ease;
+}
+
+.project-title, .project-heading {
+    font-family: 'Soka', sans-serif;
+    font-size: 32px;
+}
+
+#get-in-touch {
+    padding: 40px;
+}
+
+#get-in-touch form {
+    display: flex;
+    flex-direction: column;
+}
+
+#get-in-touch h2 {
+    margin-top: 0;
+}
+
+#input-fields {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+#get-in-touch a {
+    margin-top: 40px;
+    align-self: center;
+}
+
+input[type="text"], textarea {
+    width: clamp(20vw, 80vw, 1250px);
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Pangea Afrikan', sans-serif;
+    padding: 0 12px;
+    background-color: #FFF9F2;
+    margin-bottom: 32px;
+}
+
+textarea#message {
+    height: 300px;
+    border: 2px solid #292929;
+
+}
+
+#email-button {
+    align-self: center;
+    width: auto;
+}
+
+#back-heading {
+    display: flex;
+    align-items: center;
+}
+
+#back-heading h2 {
+    margin: 20px 40px;
+}
+
+.subheading3 {
+    font-family: 'Pangea Afrikan', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.subheading3 .em {
+    font-weight: 600;
+}
+
+#tech-subheading {
+    margin-bottom: 0;
+}
+
+.tech {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.tech > * {
+    padding: 8px 16px;
+    border: 2px solid #292929;
+    border-radius: 12px;
+    margin: 20px 20px 0 0;
+    font-weight: 600;
+}
+
+#project-land, #project-desc {
+    padding: 40px;
+}
+
+#project-land {
+    border-bottom: 2px solid #292929;
+}
+
+#project-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+#project-desc img, iframe {
+    width: clamp(300px, calc(100vw - 194px), 1250px);
+    border: 2px solid #292929;
+    margin: 24px 0;
+    align-self: center;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.link h4 {
+    font-family: 'Soka', sans-serif;
+    font-size: 24px;
+    margin: 0 24px 0 0;
+}
+
+footer {
+    height: 160px;
+    border-top: 2px solid #292929;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFF9F2;
+}
+
+small {
+    font-family: 'Pangea Afrikan', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+footer h4, footer h3, footer h5 {
+    margin: 0;
+}
+
+footer h5 {
+    font-family: 'Pangea Afrikan', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+footer h3 {
+    font-family: 'Soka', sans-serif;
+    font-size: 28px;
+    margin: 8px 0;
+}
+
+#footer-top, #footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-bottom {
+    align-items: end;
+}
+
+#nav-links {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'Pangea Afrikan', sans-serif;
+    font-weight: 500;
+}
+
+#nav-links > * {
+    margin-right: 28px;
+}
+
+#nav-links :last-child {
+    margin-right: 0;
+}
+
+#signature {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+        padding: 0 calc(50vw - 700px);
+    }
+    
+    footer {
+        background: none;
+    }
+}
+
+
+.circle {
+    justify-self: center;
+    align-self: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: brightness(1.5) contrast(1.5);
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 20s linear infinite;
+    text-transform: uppercase;
+    font-family: 'Pangea Afrikan', sans-serif;
+    font-weight: 500;
+}
+
+@keyframes rotateText {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.text span {
+    position: absolute;
+    left: 50%;
+    font-size: 1.1em;
+    transform-origin: 0 130px;
+}

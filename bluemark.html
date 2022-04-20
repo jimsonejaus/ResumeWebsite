@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css" type="text/css">
+    <title>My Works | OurSanggu Revisions</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html#my-works">Who I Am</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#my-works">My Works</a>
+        <a href="index.html#get-in-touch">Get In Touch</a>
+    </nav>
+    <section id="project-land">
+        <div id="back-heading">
+            <button onclick="history.back()"><img src="static/images/back-icon.svg" alt="back icon"></button>
+            <h2 class="heading">Blue Mark Delivery Services</h2>
+        </div>
+        <div id="project-details">
+            <h4 class="subheading3">Project Type: <span class="em">Academic Project</span></h4>
+            <h4 class="subheading3">My Role: <span class="em">Full Stack Developer</span></h4>
+            <h4 class="subheading3" id="tech-subheading">Technologies Used:</h4>
+            <div class='tech'>
+                <h4 class="subheading3 em">HTML</h4>
+                <h4 class="subheading3 em">CSS</h4>
+                <h4 class="subheading3 em">Django</h4>
+                <h4 class="subheading3 em">Javascript</h4>
+            </div>
+        </div>
+        <a href="https://gitlab.discs.ateneo.edu/Andrew_L/ProjectDeliverable" target=”_blank”>
+            <div class="link">
+                <h4>Gitlab</h4>
+                <img src="static/images/link-to.svg" alt="link to an external site">
+            </div>
+        </a>
+    </section>
+    <section id="project-desc">
+        <h3 class="project-heading">Description</h3>
+        <p>Blue Mark Delivery Services is our group's final project for our Information management class. Our main task is to incorporate our SQL queries to a simple web page with a database. The SQL queries may be used for inputs, manipulation of data, or fetching information from the database. The main function of our web page is to filter the results shown on the screen by their origin, destination, its service type, package type or any combination of those four. It will then return those filtered results and display them in the website.</p>
+        <p>This project started with a specification of a company process that was provided to us by our professors. From this company process, we needed to devise a entity relationship diagram that would capture the relationships between the entities that interacts in the process. After that, we transformed the conceptual ER diagram we made into a logical ER diagram with normalized relations so we can use it for our SQL database. Then, the development of the database and the front-end itself started immediately after.</p>
+        <iframe width="1200" height="645" src="https://www.youtube.com/embed/OSvqOmlVhMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3 class="project-heading">Project Highlights</h3>
+        <p>With this being our official introduction to SQL and information management, it was quite challenging to grasp it at first. However, with enough practice and help also from the internet, we were able to deliver a good product in the end.</p>
+        <p>Perhaps the main challenge that the developers faced is the integration part between the front-end and the back-end of the web app. Upon selecting the options from the dropdown and clicking the filter button, it should already execute the query for that specific combination of filters. Now, the solution we have come up with is to create a dynamic query which takes in different values depending on the options selected so that we don't have to create a different query for all the possible combinations. This was the more efficient approach to our problem even though it took us a bit longer to implement. This kind of approach will also make it easier for future developers to add, modify, or remove filters when necessary.</p>
+    </section> 
+</body>
+<footer>
+    <div id="footer-top">
+        <small>Copyright &copy; 2022 Jimson Ejaus. All Rights Reserved</small>
+        <div id="nav-links">
+            <h4>Explore</h4>
+            <a href="index.html#who-i-am">Who I Am</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#my-works">My Works</a>
+            <a href="index.html#get-in-touch">Get In Touch</a>
+        </div>
+    </div>
+    <div id="footer-bottom">
+        <div id="nav-links">
+            <h4>Contacts</h4>
+            <a href="mailto:carl.ejaus@obf.ateneo.edu">Email</a>
+            <a href="https://linkedin.com/in/jimson-ejaus-14a053229" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/jimsonejaus/" target="_blank">Instagram</a>
+        </div>
+        <div id="signature">
+            <h5>Designed and Developed by:</h5>
+            <h3>Jimson Ejaus</h3>
+            <h5>carl.ejaus@obf.ateneo.edu</h5>
+        </div>
+    </div>
+</footer>
+</html>
