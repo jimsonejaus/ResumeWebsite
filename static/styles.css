@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'Soka';
-    src: local('Soka'), url('typefaces/SokaHeavy.woff2') format("woff2");
+    src: local('Soka'), url('typefaces/SokaHeavy.woff2') format("woff2"), url('typefaces/SokaHeavy.ttf') format("truetype");
     font-weight: 700;
 }
 
